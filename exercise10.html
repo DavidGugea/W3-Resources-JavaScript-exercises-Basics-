@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input:required:invalid, input:focus:invalid{
+            border: thick solid red;
+        }
+        input:required:valid, input:focus:valid{
+            border: thicks solid green;
+        }
+    </style>
+</head>
+<body>
+    <label for="firstNumber">1st Number:</label>
+    <input type="number" id="firstNumber" required>
+    <label for="secondNumber">2st Number:</label>
+    <input type="number" id="secondNumber" required>
+    <button id="multiply_Button">Multiply</button>
+    <button id="divide_Button">Divide</button>
+    <p>The Result is:</p>
+    <p id="result"></p>
+</body>
+</html>
+<script src="exercise10.js"></script>
